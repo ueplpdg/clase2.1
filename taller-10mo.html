@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, Georgia, serif; }
+  a { color: #1b4b8f; } a:hover { color: #0f2d57; }
+  pre { font-family: 'JetBrains Mono', ui-monospace, monospace; margin:0; }
+  @media print { .barra-docente { display: none !important; } }
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<div class="barra-docente" style="position:fixed;top:8px;right:8px;z-index:9000;background:rgba(255,255,255,.97);border:1px solid #111;box-shadow:0 2px 8px rgba(0,0,0,.18);padding:6px 8px;display:flex;align-items:center;gap:7px;font-family:system-ui,sans-serif;font-size:11px">
+<button id="btnClaves" onClick="{{ toggleClaves }}" style="background:#333;border:none;color:#fff;font-family:system-ui,sans-serif;font-size:11px;font-weight:700;padding:6px 10px;cursor:pointer;white-space:nowrap">Ver claves</button>
+<div id="etiquetaVersion" style="font-weight:700;color:#333;white-space:nowrap">ESTUDIANTE</div>
+</div>
+
+<doc-page size="letter">
+
+<section class="page" data-screen-label="10mo C1" style="padding:0.3in 0.45in 0.22in;box-sizing:border-box;font-size:8.3pt;line-height:1.13">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #111;padding-bottom:3px">
+<div style="font-size:7.6pt;letter-spacing:.06em;font-weight:700;white-space:nowrap">UNIDAD EDUCATIVA PARTICULAR &ldquo;LA PROVIDENCIA&rdquo;</div>
+<div style="font-size:7.6pt;letter-spacing:.06em;white-space:nowrap">Robótica &middot; 2026&ndash;2027</div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:4px">
+<div style="font-size:12pt;font-weight:700;white-space:nowrap">Algoritmos y diagramas de flujo</div>
+<div style="font-size:8pt;font-weight:700;white-space:nowrap">DÉCIMO EGB &middot; TALLER DE NIVELACIÓN</div>
+</div>
+
+<div data-clave="1" style="display:none;text-align:center;font-size:7.8pt;font-weight:700;color:#146c43;border:1.5px solid #146c43;padding:2px;margin-top:4px;letter-spacing:.08em">VERSIÓN DOCENTE &mdash; CLAVES VISIBLES</div>
+
+<table style="width:100%;border-collapse:collapse;font-size:7.6pt;margin-top:5px">
+<tbody>
+<tr>
+<td colspan="2" style="border:1px solid #111;padding:6px">NOMBRE:</td>
+<td style="border:1px solid #111;padding:6px">Paralelo: ______</td>
+<td style="border:1px solid #111;padding:6px">Fecha: __________</td>
+<td style="border:1px solid #111;padding:6px">Nota: ______ /10</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border:1px solid #111;border-top:none;padding:4px 7px;font-size:7.4pt;background:#f5f5f5">
+<b>Cómo trabajar esta hoja.</b> 80 minutos, tres bloques y un reto final. <b>No hace falta saber programar:</b> todo está escrito en español, con cajas que guardan números y figuras de diagrama de flujo. En cada tema el <b>.1</b> es directo y el <b>.2</b> pide un paso más. Las tablas se llenan <b>fila por fila</b>. Individual, con lápiz.
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 1 &middot; SEGUIR INSTRUCCIONES PASO A PASO</span><span>{{ t1 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">1</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">LAS DOS CAJAS</div>
+</div>
+<div style="padding:3px 7px 0;font-size:7.4pt;background:#fafafa;border-bottom:1px dashed #bbb">Imagina dos cajas rotuladas <b>A</b> y <b>B</b>. Cada caja guarda <b>un solo número</b>: si pones uno nuevo, el anterior se pierde.</div>
+<div style="display:grid;grid-template-columns:1fr 1.1fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">1.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div style="margin-top:2px;line-height:1.45">1. Pon <b>5</b> en A.<br />2. Pon en B lo que hay en A, <b>más 3</b>.<br />3. Pon en A <b>el doble</b> de lo que hay en B.<br />4. Pon en B lo que hay en A <b>menos</b> lo que hay en B.</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Después del paso</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700;text-align:center">A</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700;text-align:center">B</td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">1</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">2</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">3</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">4</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (5, vacía) &middot; (5, 8) &middot; (16, 8) &middot; (16, 8). En el paso 4: 16 &minus; 8 = 8, así que B no cambia.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">1.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>En A hay <b>7</b> y en B hay <b>2</b>. Se quiere <b>intercambiarlos</b>. Un compañero escribe:</div>
+<div style="margin-top:3px;margin-left:6px;line-height:1.45">1. Pon en A lo que hay en B.<br />2. Pon en B lo que hay en A.</div>
+<div style="margin-top:3px">a) Al final queda: A = ______ B = ______</div>
+<div style="margin-top:3px">b) ¿En qué paso exacto se pierde el 7 y por qué ya no se puede recuperar?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="margin-top:3px">c) Corrígelo usando una tercera caja <b>C</b>. Escribe los tres pasos:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) A = 2, B = 2. (b) en el paso 1: al escribir el 2 en A, el 7 se borra y no quedó copia en ninguna caja. (c) Pon en C lo que hay en A &middot; pon en A lo que hay en B &middot; pon en B lo que hay en C.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">2</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">REPETIR Y LLEVAR LA CUENTA</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">2.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Un robot da <b>5 vueltas</b> a la pista. En la vuelta número <i>n</i> recoge <i>n</i> fichas. Anota el <b>total acumulado</b>:</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Vuelta</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">1</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">2</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">3</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">4</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">5</td></tr>
+<tr><td style="border:1px solid #111;padding:7px 4px;font-weight:700">Total</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px">Sin rehacer la tabla, ¿cuántas llevaría en la vuelta <b>6</b>? ______ ¿Cómo lo sacaste? ____________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 1 &middot; 3 &middot; 6 &middot; 10 &middot; 15 &rarr; en la vuelta 6 lleva <b>21</b>: basta sumar 6 al total anterior, no recalcular todo.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">2.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Un juego de reglas. Empiezas con un número y repites hasta llegar a <b>1</b>:</div>
+<div style="margin-top:3px;margin-left:6px;line-height:1.45">&middot; si el número es <b>par</b> &rarr; divídelo para 2<br />&middot; si es <b>impar</b> &rarr; multiplícalo por 3 y suma 1</div>
+<div style="margin-top:3px">a) Empieza en <b>6</b> y escribe toda la cadena hasta el 1:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="margin-top:3px">b) ¿Cuántos pasos diste? ______</div>
+<div style="margin-top:3px">c) Antes de empezar, <b>no</b> se puede saber cuántos pasos tomará. ¿Por qué? Compáralo con las 5 vueltas del 2.1:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 6 &rarr; 3 &rarr; 10 &rarr; 5 &rarr; 16 &rarr; 8 &rarr; 4 &rarr; 2 &rarr; 1 = <b>8 pasos</b>. (c) en 2.1 el número de repeticiones está fijado de antemano (5 vueltas); aquí depende del resultado de cada paso, así que se repite <b>hasta que</b> se cumpla una condición.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">3</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">CONDICIONES CON Y / O / NO</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">3.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>La puerta del laboratorio se abre si: <b>tiene tarjeta Y sabe la clave</b>.</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Tarjeta</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Clave</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">¿Abre?</td></tr>
+<tr><td style="border:1px solid #111;padding:4px">sí</td><td style="border:1px solid #111;padding:4px">sí</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">sí</td><td style="border:1px solid #111;padding:4px">no</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">no</td><td style="border:1px solid #111;padding:4px">sí</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">no</td><td style="border:1px solid #111;padding:4px">no</td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px">Si cambiamos <b>Y</b> por <b>O</b>, ¿cuántas filas darían &ldquo;sí&rdquo;? ______</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: sí &middot; no &middot; no &middot; no. Con <b>O</b> darían &ldquo;sí&rdquo; <b>3</b> filas.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">3.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>El robot <b>se detiene</b> cuando: <b>NO (ve la pista Y la batería es mayor al 20 %)</b>.</div>
+<div style="margin-top:3px">a) Marca con una X los casos en que se detiene:</div>
+<div style="margin-left:6px;line-height:1.5">___ ve la pista, batería 80 %<br />___ ve la pista, batería 15 %<br />___ no ve la pista, batería 80 %<br />___ no ve la pista, batería 10 %</div>
+<div style="margin-top:3px">b) Escribe la misma condición <b>sin el NO</b>, usando <b>O</b>:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) se detiene en los casos 2, 3 y 4; solo sigue en el 1. (b) &ldquo;se detiene si <b>no ve la pista O la batería es 20 % o menos</b>&rdquo;. Al negar, la Y se vuelve O y cada parte se invierte.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 2 &middot; DIAGRAMAS DE FLUJO</span><span>{{ t2 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">4</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">SEGUIR UN DIAGRAMA CON BUCLE</div>
+</div>
+<div style="display:grid;grid-template-columns:0.9fr 1fr 1.05fr">
+
+<div style="padding:5px 3px;border-right:1px solid #111;display:grid;grid-template-columns:13px 1fr 13px;align-items:center;justify-items:center;font-size:6.2pt">
+<div style="grid-column:1;grid-row:5 / 9;justify-self:stretch;align-self:stretch;position:relative;margin:14px 0 0 1px;border-left:1px solid #111;border-top:1px solid #111;border-bottom:1px solid #111"><div style="position:absolute;right:-1px;top:-3.5px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-left:4px solid #111"></div></div>
+<div style="grid-column:3;grid-row:5 / 11;justify-self:stretch;align-self:stretch;position:relative;margin:14px 1px 10px 0;border-right:1px solid #111;border-top:1px solid #111;border-bottom:1px solid #111"><div style="position:absolute;left:-1px;bottom:-3.5px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-right:4px solid #111"></div><div style="position:absolute;left:1px;top:1px;font-weight:700">NO</div></div>
+<div style="grid-column:2;grid-row:1;border:1px solid #111;border-radius:999px;padding:1px 12px">INICIO</div>
+<div style="grid-column:2;grid-row:2;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:3;border:1px solid #111;padding:2px 7px;text-align:center;line-height:1.15">Poner 0 en TOTAL<br />Poner 1 en VUELTA</div>
+<div style="grid-column:2;grid-row:4;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:5;width:100%;box-sizing:border-box;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:6px 10px;text-align:center;line-height:1.1">¿VUELTA es<br />4 o menos?</div></div>
+<div style="grid-column:2;grid-row:6;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div><div style="position:absolute;left:52%;top:0;font-weight:700">SÍ</div></div>
+<div style="grid-column:2;grid-row:7;border:1px solid #111;padding:2px 7px;text-align:center;line-height:1.15">Sumar VUELTA al TOTAL<br />Aumentar VUELTA en 1</div>
+<div style="grid-column:2;grid-row:8;width:1px;height:11px;background:#111"></div>
+<div style="grid-column:2;grid-row:10;border:1px solid #111;transform:skewX(-16deg);padding:2px 9px"><span style="display:inline-block;transform:skewX(16deg)">Mostrar TOTAL</span></div>
+<div style="grid-column:2;grid-row:11;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:12;border:1px solid #111;border-radius:999px;padding:1px 12px">FIN</div>
+</div>
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">4.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div style="font-size:7.5pt;line-height:1.3;margin-bottom:2px">Llena la tabla con los valores al terminar cada vuelta:</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:2px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Vuelta</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">VUELTA</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">TOTAL</td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">1ª</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">2ª</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">3ª</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">4ª</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px">Número mostrado: ______</div>
+<div style="margin-top:3px">Valor de VUELTA al salir: ______</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (2,1) (3,3) (4,6) (5,10) &rarr; muestra <b>10</b> y sale con VUELTA = <b>5</b>. Se acepta también anotar VUELTA antes de aumentarla, si lo hacen igual en todas las filas.</div>
+</div>
+
+<div style="padding:5px 7px">
+<div style="font-weight:700">4.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>a) Si la pregunta fuera <b>¿VUELTA es 3 o menos?</b>, ¿qué número se muestra? ______</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="margin-top:3px">b) Si se borra &ldquo;<b>Aumentar VUELTA en 1</b>&rdquo;, describe exactamente qué hace el diagrama:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="margin-top:3px">c) ¿Qué figura del diagrama <b>garantiza</b> que el bucle termina alguna vez?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) <b>6</b>: da una vuelta menos. (b) VUELTA se queda en 1 para siempre, la respuesta siempre es SÍ: <b>bucle infinito</b>, nunca muestra nada. (c) la caja &ldquo;Aumentar VUELTA en 1&rdquo;: es la que acerca el valor al punto donde la respuesta pasa a ser NO.</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="page" data-screen-label="10mo C2" style="padding:0.22in 0.45in 0.12in;box-sizing:border-box;font-size:8.3pt;line-height:1.12">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:3px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">5</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">COMPLETAR UN DIAGRAMA CON DOS DECISIONES</div>
+</div>
+<div style="padding:2px 7px 1px;font-size:7.3pt;line-height:1.25;background:#fafafa;border-bottom:1px dashed #bbb"><b>Control de acceso al laboratorio.</b> Se lee la tarjeta; si no es válida, se niega el acceso. Si es válida, se pide la clave; si la clave está mal, también se niega. Solo con las dos cosas correctas se abre la puerta.</div>
+<div style="display:grid;grid-template-columns:1.05fr 1fr">
+
+<div style="padding:3px 7px;border-right:1px solid #111">
+<div style="font-weight:700">5.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span> <span style="font-weight:400;font-size:7.2pt">&mdash; escribe en el banco el número de figura que le corresponde a cada texto</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;font-size:6.1pt;margin-top:3px">
+<div style="grid-column:2;grid-row:5 / 11;justify-self:stretch;align-self:stretch;position:relative">
+<div style="position:absolute;left:0;width:50%;top:14px;border-top:1px solid #111"></div>
+<div style="position:absolute;left:50%;top:14px;bottom:0;border-left:1px solid #111"></div>
+<div style="position:absolute;left:50%;bottom:-4px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:6px;top:3px;font-weight:700">NO</div></div>
+<div style="grid-column:2;grid-row:9;justify-self:stretch;align-self:stretch;position:relative"><div style="position:absolute;left:0;width:50%;top:50%;border-top:1px solid #111"></div><div style="position:absolute;left:6px;top:calc(50% - 9px);font-weight:700">NO</div></div>
+<div style="grid-column:1;grid-row:1;border:1px solid #111;border-radius:999px;padding:1px 12px">INICIO</div>
+<div style="grid-column:1;grid-row:2;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:1;grid-row:3;border:1px solid #111;transform:skewX(-16deg);padding:3px 22px"><span style="display:inline-block;transform:skewX(16deg)"><span style="color:#bbb">(1)</span></span></div>
+<div style="grid-column:1;grid-row:4;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:1;grid-row:5;width:100%;box-sizing:border-box;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:6px 10px;text-align:center;line-height:1.1"><span style="color:#bbb">(2)</span></div></div>
+<div style="grid-column:1;grid-row:6;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div><div style="position:absolute;left:52%;top:0;font-weight:700">SÍ</div></div>
+<div style="grid-column:1;grid-row:7;border:1px solid #111;padding:3px 17px;text-align:center;line-height:1.15"><span style="color:#bbb">(3)</span></div>
+<div style="grid-column:1;grid-row:8;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:1;grid-row:9;width:100%;box-sizing:border-box;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:6px 10px;text-align:center;line-height:1.1"><span style="color:#bbb">(4)</span></div></div>
+<div style="grid-column:1;grid-row:10;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div><div style="position:absolute;left:52%;top:0;font-weight:700">SÍ</div></div>
+<div style="grid-column:1;grid-row:11;border:1px solid #111;padding:3px 17px;text-align:center;line-height:1.15"><span style="color:#bbb">(6)</span></div>
+<div style="grid-column:2;grid-row:11;border:1px solid #111;padding:3px 17px;text-align:center;line-height:1.15"><span style="color:#bbb">(5)</span></div>
+<div style="grid-column:1 / 3;grid-row:12;position:relative;width:100%;height:13px"><div style="position:absolute;left:25%;right:25%;bottom:0;border-bottom:1px solid #111"></div><div style="position:absolute;left:25%;top:0;height:13px;border-left:1px solid #111"></div><div style="position:absolute;left:75%;top:0;height:13px;border-left:1px solid #111"></div></div>
+<div style="grid-column:1 / 3;grid-row:13;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:1 / 3;grid-row:14;border:1px solid #111;border-radius:999px;padding:1px 12px">FIN</div>
+</div>
+<div style="border:1px solid #111;background:#f5f5f5;padding:3px 6px;font-size:6.9pt;line-height:1.45;margin-top:3px">
+<b>Banco de textos</b> &mdash; escribe el número de figura en cada raya:<br />___ Abrir la puerta &nbsp; ___ ¿la clave es correcta? &nbsp; ___ Leer la tarjeta &nbsp; ___ Mostrar &ldquo;acceso negado&rdquo; &nbsp; ___ Pedir la clave &nbsp; ___ ¿la tarjeta es válida?
+</div>
+</div>
+
+<div style="padding:3px 7px">
+<div style="font-weight:700">5.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>a) ¿Cuántos caminos distintos terminan en &ldquo;acceso negado&rdquo;? ______</div>
+<div style="margin-top:4px">b) ¿Por qué <b>no</b> se pueden intercambiar los dos rombos (preguntar la clave antes que la tarjeta)?</div>
+<div style="border-bottom:1px dotted #666;height:11px;margin-top:2px"></div>
+<div style="border-bottom:1px dotted #666;height:11px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (1) Leer la tarjeta &middot; (2) ¿la tarjeta es válida? &middot; (3) Pedir la clave &middot; (4) ¿la clave es correcta? &middot; (5) Mostrar &ldquo;acceso negado&rdquo; &middot; (6) Abrir la puerta. (a) <b>2</b>. (b) lógica: sin tarjeta no se sabe de quién es la clave que hay que comparar; seguridad: se estaría pidiendo la clave a cualquiera.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:4px 0 3px;white-space:nowrap">
+<span>BLOQUE 3 &middot; DECIDIR POR RANGOS</span><span>{{ t3 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:3px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">6</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">LOS BORDES DE UN RANGO</div>
+</div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr">
+<div style="padding:3px 7px;border-right:1px solid #111">
+<div style="font-weight:700">6.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Un sensor de temperatura controla un ventilador:</div>
+<div style="margin-left:6px;font-size:7.6pt;line-height:1.3">menos de 20 °C &rarr; apagado &middot; de 20 a 34 °C &rarr; velocidad baja &middot; 35 °C o más &rarr; velocidad alta</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.2pt;margin-top:2px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">°C</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">12</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">20</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">34</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">35</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">41</td></tr>
+<tr><td style="border:1px solid #111;padding:4px;font-weight:700">Estado</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: apagado &middot; baja &middot; baja &middot; alta &middot; alta.</div>
+</div>
+<div style="padding:3px 7px">
+<div style="font-weight:700">6.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Otro grupo armó su diagrama con estas tres reglas, en este orden:</div>
+<div style="margin-top:2px;margin-left:6px;line-height:1.3">1. ¿la temperatura es <b>mayor</b> a 35? &rarr; alta<br />2. ¿es <b>mayor</b> a 20? &rarr; baja<br />3. en cualquier otro caso &rarr; apagado</div>
+<div style="margin-top:3px">a) ¿Qué hace con <b>35 °C</b>? __________ ¿Y con <b>20 °C</b>? __________</div>
+<div style="margin-top:3px">b) Cambia lo mínimo necesario para que coincida con la regla del 6.1:</div>
+<div style="border-bottom:1px dotted #666;height:11px;margin-top:2px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) con 35 pone <b>baja</b> (debería ser alta) y con 20 pone <b>apagado</b> (debería ser baja). (b) basta cambiar &ldquo;mayor a&rdquo; por &ldquo;mayor o igual a&rdquo; en las dos preguntas. El error está en los bordes, no en la idea.</div>
+</div>
+</div>
+</div>
+
+<div style="border:2px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;justify-content:space-between;background:#111;color:#fff;padding:3px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em"><span style="white-space:nowrap">7 &middot; RETO FINAL &mdash; EL ROBOT RECOLECTOR</span><span style="white-space:nowrap">{{ t4 }} &middot; 3 pts</span></div>
+<div style="padding:4px 8px">
+<div style="font-size:8pt;line-height:1.22">El robot avanza por un pasillo recogiendo cajas. <b>Mientras la batería sea mayor al 15 % y no haya recogido 5 cajas</b>, sigue avanzando: si detecta una caja, la recoge y suma 1 a su cuenta; si no detecta nada, sigue igual. Cuando ya no se cumple la condición, muestra cuántas cajas recogió y termina.</div>
+<div style="display:grid;grid-template-columns:1.05fr 1fr;gap:10px;margin-top:5px">
+
+<div>
+<div style="font-size:7.4pt;font-style:italic;margin-bottom:2px">Empareja cada texto del banco con su figura: escribe el número en la raya. Cada texto se usa <b>una sola vez</b>.</div>
+<div style="display:grid;grid-template-columns:13px 1fr 1fr;align-items:center;justify-items:center;font-size:6.2pt">
+<div style="grid-column:1;grid-row:5 / 13;justify-self:stretch;align-self:stretch;position:relative;margin:15px 0 0 1px;border-left:1px solid #111;border-top:1px solid #111;border-bottom:1px solid #111"><div style="position:absolute;right:-1px;top:-3.5px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-left:4px solid #111"></div></div>
+<div style="grid-column:1;grid-row:9;justify-self:stretch;align-self:stretch;position:relative"><div style="position:absolute;left:0;right:0;top:50%;border-top:1px solid #111"></div><div style="position:absolute;left:1px;top:calc(50% - 10px);font-weight:700;font-size:5.4pt">NO</div></div>
+<div style="grid-column:3;grid-row:5 / 13;justify-self:stretch;align-self:stretch;position:relative">
+<div style="position:absolute;left:0;width:50%;top:15px;border-top:1px solid #111"></div>
+<div style="position:absolute;left:50%;top:15px;bottom:0;border-left:1px solid #111"></div>
+<div style="position:absolute;left:50%;bottom:-4px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:6px;top:4px;font-weight:700">NO</div></div>
+<div style="grid-column:2;grid-row:1;border:1px solid #111;border-radius:999px;padding:1px 12px">INICIO</div>
+<div style="grid-column:2;grid-row:2;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:3;border:1px solid #111;padding:3px 19px;text-align:center;line-height:1.15"><span style="color:#bbb">(1)</span></div>
+<div style="grid-column:2;grid-row:4;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:5;width:100%;box-sizing:border-box;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:6px 10px;text-align:center;line-height:1.1"><span style="color:#bbb">(2)</span></div></div>
+<div style="grid-column:2;grid-row:6;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div><div style="position:absolute;left:52%;top:0;font-weight:700">SÍ</div></div>
+<div style="grid-column:2;grid-row:7;border:1px solid #111;padding:3px 19px;text-align:center;line-height:1.15"><span style="color:#bbb">(3)</span></div>
+<div style="grid-column:2;grid-row:8;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:9;width:100%;box-sizing:border-box;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:6px 10px;text-align:center;line-height:1.1"><span style="color:#bbb">(4)</span></div></div>
+<div style="grid-column:2;grid-row:10;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div><div style="position:absolute;left:52%;top:0;font-weight:700">SÍ</div></div>
+<div style="grid-column:2;grid-row:11;border:1px solid #111;padding:3px 19px;text-align:center;line-height:1.15"><span style="color:#bbb">(6)</span></div>
+<div style="grid-column:2;grid-row:12;width:1px;height:12px;background:#111"></div>
+<div style="grid-column:3;grid-row:13;border:1px solid #111;padding:3px 17px;text-align:center;line-height:1.15"><span style="color:#bbb">(5)</span></div>
+<div style="grid-column:3;grid-row:14;position:relative;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:7px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:3;grid-row:15;border:1px solid #111;border-radius:999px;padding:1px 12px">FIN</div>
+</div>
+<div style="border:1px solid #111;background:#f5f5f5;padding:3px 6px;font-size:6.9pt;line-height:1.45;margin-top:3px">
+<b>Banco:</b> &nbsp; ___ Avanzar &nbsp; ___ Poner 0 en CAJAS &nbsp; ___ ¿detecta una caja? &nbsp; ___ Recoger la caja y aumentar CAJAS en 1 &nbsp; ___ Mostrar CAJAS y terminar &nbsp; ___ ¿batería mayor a 15 % <b>Y</b> CAJAS menor a 5?
+</div>
+</div>
+
+<div>
+<div style="font-size:7.6pt;margin-top:3px">a) ¿Por qué la figura (1) tiene que estar <b>fuera</b> del bucle?</div>
+<div style="border-bottom:1px dotted #666;height:11px;margin-top:2px"></div>
+<div style="border-bottom:1px dotted #666;height:11px"></div>
+<div style="font-size:7.6pt;margin-top:4px">b) La condición (2) usa <b>Y</b>. ¿Qué pasaría si usara <b>O</b>? Da un ejemplo:</div>
+<div style="border-bottom:1px dotted #666;height:11px;margin-top:2px"></div>
+<div style="font-size:7.6pt;margin-top:4px">c) La batería está en 40 % y el robot lleva 5 cajas. ¿Sigue avanzando? ______ ¿Por qué?</div>
+<div style="border-bottom:1px dotted #666;height:11px;margin-top:2px"></div>
+</div>
+</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:4px">Clave: (1) Poner 0 en CAJAS &middot; (2) ¿batería mayor a 15 % Y CAJAS menor a 5? &middot; (3) Avanzar &middot; (4) ¿detecta una caja? &middot; (5) Mostrar CAJAS y terminar &middot; (6) Recoger la caja y aumentar CAJAS en 1; el regreso vuelve a la figura (2). (a) dentro del bucle se borraría la cuenta en cada vuelta. (b) con O bastaría una sola condición: seguiría recogiendo aunque ya tenga 5 cajas, o seguiría con la batería agotada. (c) <b>no</b>: la Y exige las dos y ya no se cumple &ldquo;menos de 5&rdquo;.</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:8px;font-size:7.9pt">
+<div style="border:1px solid #111;padding:4px 7px">
+<div style="font-weight:700;font-size:8pt">RÚBRICA (10 pts)</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.2pt;margin-top:2px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:1px 5px;font-weight:700">Criterio</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Pts</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Log.</td></tr>
+<tr><td style="border:1px solid #111;padding:1px 5px">Bloque 1 &mdash; seguir instrucciones (temas 1&ndash;3)</td><td style="border:1px solid #111;text-align:center">3</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:1px 5px">Bloque 2 &mdash; diagramas de flujo (temas 4 y 5)</td><td style="border:1px solid #111;text-align:center">3</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:1px 5px">Bloque 3 &mdash; bordes de un rango (tema 6)</td><td style="border:1px solid #111;text-align:center">1</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:1px 5px">Reto final &mdash; robot recolector (tema 7)</td><td style="border:1px solid #111;text-align:center">3</td><td style="border:1px solid #111"></td></tr>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:1px 5px;font-weight:700">TOTAL</td><td style="border:1px solid #111;text-align:center;font-weight:700">10</td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7pt;font-style:italic;margin-top:1px">Las tablas se califican fila por fila. Resultado correcto sin la tabla llena: mitad de puntos.</div>
+</div>
+<div style="border:1px solid #111;padding:4px 7px">
+<div style="font-weight:700;font-size:8pt">AL TERMINAR &mdash; marca con una X</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.2pt;margin-top:2px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Puedo&hellip;</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">aún no</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">con ayuda</td><td style="border:1px solid #111;padding:2px;text-align:center;width:26px">solo</td></tr>
+<tr><td style="border:1px solid #111;padding:3px">seguir paso a paso lo que guarda cada caja</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:3px">recorrer un diagrama con bucle</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:3px">completar un diagrama con dos decisiones</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7.4pt;margin-top:2px">Lo que menos entendí: ______________</div>
+</div>
+</div>
+
+</div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;claves&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;},&quot;mostrarTiempos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    let g = null;
+    try { g = localStorage.getItem('claves10mo'); } catch (e) {}
+    this.aplicar(g === null ? !!this.props.claves : g === '1');
+  }
+  componentDidUpdate(prev) { if (prev.claves !== this.props.claves) this.aplicar(!!this.props.claves); }
+  aplicar(on) {
+    try { localStorage.setItem('claves10mo', on ? '1' : '0'); } catch (e) {}
+    document.querySelectorAll('[data-clave]').forEach(el => { el.style.display = on ? 'block' : 'none'; });
+    document.querySelectorAll('#zoomwrap').forEach(w => { w.style.zoom = on ? 0.87 : 1; });
+    const b = document.getElementById('btnClaves');
+    if (b) { b.textContent = on ? 'Ocultar claves' : 'Ver claves'; b.style.background = on ? '#146c43' : '#333'; }
+    const e = document.getElementById('etiquetaVersion');
+    if (e) { e.textContent = on ? 'DOCENTE' : 'ESTUDIANTE'; e.style.color = on ? '#146c43' : '#333'; }
+  }
+  renderVals() {
+    return {
+      toggleClaves: () => {
+        const el = document.querySelector('[data-clave]');
+        this.aplicar(!(el && el.style.display !== 'none'));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

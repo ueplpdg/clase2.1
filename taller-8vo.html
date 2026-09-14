@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, Georgia, serif; }
+  a { color: #1b4b8f; } a:hover { color: #0f2d57; }
+  pre { font-family: 'JetBrains Mono', ui-monospace, monospace; margin:0; }
+  @media print { .barra-docente { display: none !important; } }
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<div class="barra-docente" style="position:fixed;top:8px;right:8px;z-index:9000;background:rgba(255,255,255,.97);border:1px solid #111;box-shadow:0 2px 8px rgba(0,0,0,.18);padding:6px 8px;display:flex;align-items:center;gap:7px;font-family:system-ui,sans-serif;font-size:11px">
+<button id="btnClaves" onClick="{{ toggleClaves }}" style="background:#333;border:none;color:#fff;font-family:system-ui,sans-serif;font-size:11px;font-weight:700;padding:6px 10px;cursor:pointer;white-space:nowrap">Ver claves</button>
+<div id="etiquetaVersion" style="font-weight:700;color:#333;white-space:nowrap">ESTUDIANTE</div>
+</div>
+
+<doc-page size="letter">
+
+<section class="page" data-screen-label="8vo C1" style="padding:0.32in 0.45in 0.26in;box-sizing:border-box;font-size:8.3pt;line-height:1.15">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #111;padding-bottom:3px">
+<div style="font-size:7.6pt;letter-spacing:.06em;font-weight:700;white-space:nowrap">UNIDAD EDUCATIVA PARTICULAR &ldquo;LA PROVIDENCIA&rdquo;</div>
+<div style="font-size:7.6pt;letter-spacing:.06em;white-space:nowrap">Robótica &middot; 2026&ndash;2027</div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:4px">
+<div style="font-size:12pt;font-weight:700;letter-spacing:.01em;white-space:nowrap">Del algoritmo al diagrama de flujo</div>
+<div style="font-size:8pt;font-weight:700;white-space:nowrap">OCTAVO EGB &middot; TALLER DE NIVELACIÓN</div>
+</div>
+
+<div data-clave="1" style="display:none;text-align:center;font-size:7.8pt;font-weight:700;color:#146c43;border:1.5px solid #146c43;padding:2px;margin-top:4px;letter-spacing:.08em">VERSIÓN DOCENTE &mdash; CLAVES VISIBLES</div>
+
+<table style="width:100%;border-collapse:collapse;font-size:7.6pt;margin-top:5px">
+<tbody>
+<tr>
+<td colspan="2" style="border:1px solid #111;padding:6px">NOMBRE:</td>
+<td style="border:1px solid #111;padding:6px">Paralelo: ______</td>
+<td style="border:1px solid #111;padding:6px">Fecha: __________</td>
+<td style="border:1px solid #111;padding:6px">Nota: ______ /10</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border:1px solid #111;border-top:none;padding:4px 7px;font-size:7.4pt;background:#f5f5f5">
+<b>Cómo trabajar esta hoja.</b> 80 minutos, tres bloques. En cada tema el <b>.1</b> se resuelve con lo que ya sabes y el <b>.2</b> pide un paso más. <b>No borres tus tachones:</b> el procedimiento suma igual que la respuesta. Individual, con lápiz.
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 1 &middot; ORDENAR Y DESCRIBIR PASOS</span><span>{{ t1 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">1</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">EL ORDEN IMPORTA</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.05fr">
+<div style="padding:4px 7px;border-right:1px solid #111">
+<div style="font-weight:700">1.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Numera del <b>1</b> al <b>6</b> los pasos para enviar un archivo por correo:</div>
+<div style="margin:3px 0 0 6px;line-height:1.38">___ escribir la dirección del destinatario<br />___ abrir el correo<br />___ pulsar &ldquo;enviar&rdquo;<br />___ adjuntar el archivo<br />___ pulsar &ldquo;redactar&rdquo;<br />___ escribir el asunto</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 3 &middot; 1 &middot; 6 &middot; 5 &middot; 2 &middot; 4.</div>
+</div>
+<div style="padding:4px 7px">
+<div style="font-weight:700">1.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Este algoritmo tiene <b>dos pasos intercambiados</b>:</div>
+<pre style="font-size:7.4pt;line-height:1.45;margin-top:3px;border-left:2px solid #999;padding-left:6px">1. Desbloquear la pantalla
+2. Marcar el número
+3. Abrir la app de teléfono
+4. Pulsar el botón de llamar
+5. Hablar</pre>
+<div style="margin-top:3px">a) Pasos intercambiados: ______ y ______</div>
+<div style="margin-top:2px">b) ¿Qué ocurre si se sigue tal como está escrito?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 2 y 3. Se intenta marcar sin tener abierta la app: no hay dónde escribir el número. Orden correcto: desbloquear, abrir la app, marcar, llamar, hablar.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">2</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">ENTRADA &rarr; PROCESO &rarr; SALIDA</div>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr">
+<div style="padding:4px 7px;border-right:1px solid #111">
+<div style="font-weight:700">2.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Completa la tabla. La primera fila es el ejemplo.</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.2pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Situación</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Entrada</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Proceso</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Salida</td></tr>
+<tr><td style="border:1px solid #111;padding:2px 4px">Calculadora: 5 + 3</td><td style="border:1px solid #111;padding:2px 4px">5, 3 y +</td><td style="border:1px solid #111;padding:2px 4px">sumar</td><td style="border:1px solid #111;padding:2px 4px">8</td></tr>
+<tr><td style="border:1px solid #111;padding:7px 4px">Puerta automática</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:7px 4px">Licuadora</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: puerta &rarr; entrada: sensor detecta persona / proceso: activar el motor / salida: puerta abierta. Licuadora &rarr; entrada: frutas y velocidad elegida / proceso: girar las cuchillas / salida: jugo.</div>
+</div>
+<div style="padding:4px 7px">
+<div style="font-weight:700">2.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Un robot mide la distancia a la pared y se detiene cuando está a menos de 20 cm.</div>
+<div style="margin-top:3px">Entrada: ____________________</div>
+<div style="margin-top:3px">Proceso: ____________________</div>
+<div style="margin-top:3px">Salida: ____________________</div>
+<div style="margin-top:4px">De los dos números que aparecen, <b>uno cambia todo el tiempo y el otro no</b>. ¿Cuál es cada uno?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: entrada = la distancia medida; proceso = comparar esa distancia con 20; salida = detenerse o seguir. La <b>distancia</b> cambia; los <b>20 cm</b> son fijos (es el límite que decidimos nosotros).</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">3</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">ESCRIBIR UN ALGORITMO PARA EL ROBOT</div>
+</div>
+<div style="padding:4px 7px 0;font-size:7.4pt;background:#fafafa;border-bottom:1px dashed #bbb">El robot solo entiende tres órdenes: <b>AVANZA 1</b> (una casilla), <b>GIRA DER</b> y <b>GIRA IZQ</b> (90°). Empieza en <b>A</b> mirando hacia la derecha (&rarr;) y debe llegar a <b>B</b>.</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr">
+<div style="padding:4px 7px;border-right:1px solid #111">
+<div style="font-weight:700">3.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<pre style="font-size:8.2pt;line-height:1.12;margin-top:3px">┌──┬──┬──┬──┐
+│A→│  │  │  │
+├──┼──┼──┼──┤
+│  │  │  │  │
+├──┼──┼──┼──┤
+│  │  │  │ B│
+└──┴──┴──┴──┘</pre>
+<div style="margin-top:3px">Escribe el algoritmo paso a paso:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: AVANZA 1 &times;3, GIRA DER, AVANZA 1 &times;2. Total 6 órdenes (se acepta cualquier camino válido de 6 movimientos).</div>
+</div>
+<div style="padding:4px 7px">
+<div style="font-weight:700">3.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Ahora el robot aprendió una orden nueva: <b>AVANZA n</b> (avanza n casillas de una sola vez).</div>
+<div style="margin-top:3px">a) Reescribe el mismo recorrido:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="margin-top:3px">b) Antes usaste ______ órdenes; ahora usas ______. Ahorro: ______</div>
+<div style="margin-top:3px">c) El robot hace el mismo recorrido. ¿Para qué sirve escribirlo más corto?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: AVANZA 3, GIRA DER, AVANZA 2 &rarr; de 6 a 3 órdenes. Sirve para leerlo, corregirlo y cambiarlo con menos errores: es la misma idea que hay detrás de repetir y de los bloques.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 2 &middot; REPETIR Y DECIDIR</span><span>{{ t2 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">4</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">REPETIR EN VEZ DE COPIAR</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.1fr">
+<div style="padding:4px 7px;border-right:1px solid #111">
+<div style="font-weight:700">4.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<pre style="font-size:7.2pt;line-height:1.35;margin-top:2px;border-left:2px solid #999;padding-left:6px">AVANZA 3   GIRA DER
+AVANZA 3   GIRA DER
+AVANZA 3   GIRA DER
+AVANZA 3   GIRA DER</pre>
+<div style="margin-top:3px">a) Escríbelo con <b>repetir</b>:</div>
+<div style="margin-top:2px">repetir ______ veces [ ____________________ ]</div>
+<div style="margin-top:3px">b) ¿Qué figura dibuja el robot? ____________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: repetir <b>4</b> veces [AVANZA 3, GIRA DER] &rarr; un <b>cuadrado</b> de lado 3.</div>
+</div>
+<div style="padding:4px 7px">
+<div style="font-weight:700">4.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Un compañero quiere un <b>triángulo</b> y escribe:</div>
+<pre style="font-size:7.4pt;line-height:1.35;margin-top:2px;border-left:2px solid #999;padding-left:6px">repetir 3 veces [AVANZA 3, GIRA DER 90°]</pre>
+<div style="margin-top:3px">La figura <b>no se cierra</b>.</div>
+<div style="margin-top:2px">a) ¿Cuántos grados giró en total? ______</div>
+<div style="margin-top:2px">b) ¿Cuántos grados hay que girar en total para volver al punto de partida mirando igual que al inicio? ______</div>
+<div style="margin-top:2px">c) Con giros de 90°, ¿cuántas repeticiones se necesitan? ______ ¿Y qué figura sale? ____________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) 270° &middot; (b) 360° &middot; (c) 4 repeticiones &rarr; un cuadrado. Para un triángulo el giro tendría que ser de 120°.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">5</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">DECIDIR: SI&hellip; ENTONCES&hellip; SI NO&hellip;</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.2fr">
+<div style="padding:4px 7px;border-right:1px solid #111">
+<div style="font-weight:700">5.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Completa:</div>
+<div style="margin-top:3px;line-height:1.6">SI el semáforo está en verde ENTONCES ____________________<br />SI NO ____________________</div>
+<div style="margin-top:4px">Ahora escribe tú una decisión para un robot con sensor de luz:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: cruzar / esperar. La decisión propia debe tener las dos ramas y una condición que se pueda comprobar (p. ej. SI hay poca luz ENTONCES encender el LED, SI NO apagarlo).</div>
+</div>
+<div style="padding:4px 7px">
+<div style="font-weight:700">5.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Regla del robot: <b>más de 30 cm</b> &rarr; avanza &middot; <b>entre 10 y 30 cm</b> &rarr; gira &middot; <b>menos de 10 cm</b> &rarr; retrocede.</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Lectura</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">45 cm</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">30 cm</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">22 cm</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">10 cm</td><td style="border:1px solid #111;padding:2px 4px;text-align:center">4 cm</td></tr>
+<tr><td style="border:1px solid #111;padding:8px 4px;font-weight:700">Acción</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px">Las lecturas de <b>30</b> y <b>10</b> son las más discutibles. Explica qué hace el robot en cada una y por qué:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: avanza &middot; gira &middot; gira &middot; gira &middot; retrocede. En 30 y en 10 <b>gira</b>, porque &ldquo;entre 10 y 30&rdquo; incluye los extremos y &ldquo;más de 30&rdquo; / &ldquo;menos de 10&rdquo; no. Se puntúa que note que los bordes hay que definirlos.</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="page" data-screen-label="8vo C2" style="padding:0.34in 0.45in 0.24in;box-sizing:border-box;font-size:8.5pt;line-height:1.22">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:5px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">6</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">ENCUENTRA EL ERROR</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.05fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">6.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Algoritmo de un robot que sigue una línea negra:</div>
+<pre style="font-size:7.4pt;line-height:1.4;margin-top:2px;border-left:2px solid #999;padding-left:6px">1. Leer el sensor
+2. SI ve negro ENTONCES avanzar
+3. SI ve blanco ENTONCES girar
+4. Fin</pre>
+<div style="margin-top:3px">El robot da <b>un solo paso</b> y se detiene. ¿Qué le falta al algoritmo?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: falta <b>volver al paso 1</b> (repetir). Sin esa vuelta el robot decide una sola vez y termina.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">6.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<pre style="font-size:7.4pt;line-height:1.4;margin-top:2px;border-left:2px solid #999;padding-left:6px">1. Abrir la puerta
+2. SI la puerta está con llave
+   ENTONCES usar la llave
+3. Entrar</pre>
+<div style="margin-top:3px">a) ¿Por qué este algoritmo no funciona? </div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="margin-top:2px">b) Reescríbelo en el orden correcto:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: se actúa <b>antes</b> de comprobar. Correcto: 1) SI está con llave ENTONCES usar la llave &middot; 2) abrir la puerta &middot; 3) entrar. Primero se pregunta, después se hace.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:7px 0 5px;white-space:nowrap">
+<span>BLOQUE 3 &middot; DIAGRAMAS DE FLUJO &mdash; tema nuevo</span><span>{{ t3 }}</span>
+</div>
+
+<div style="border:1.5px solid #111;break-inside:avoid;margin-bottom:5px;background:#fafafa">
+<div style="padding:3px 7px;font-weight:700;font-size:8pt;letter-spacing:.04em;border-bottom:1px solid #111">LOS CUATRO SÍMBOLOS QUE NECESITAS &mdash; lee esto antes de seguir</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;font-size:7pt">
+<div style="padding:6px 5px;border-right:1px dashed #aaa">
+<div style="border:1px solid #111;border-radius:999px;padding:2px 8px;display:inline-block;font-size:7pt;background:#fff">Inicio / Fin</div>
+<div style="margin-top:4px">Óvalo. Solo dos en todo el diagrama: dónde empieza y dónde termina.</div>
+</div>
+<div style="padding:6px 5px;border-right:1px dashed #aaa">
+<div style="display:inline-block;border:1px solid #111;transform:skewX(-18deg);padding:2px 10px;background:#fff"><span style="display:inline-block;transform:skewX(18deg);font-size:7pt">Leer / Mostrar</span></div>
+<div style="margin-top:4px">Paralelogramo. Entra un dato o sale un resultado.</div>
+</div>
+<div style="padding:6px 5px;border-right:1px dashed #aaa">
+<div style="border:1px solid #111;padding:2px 10px;display:inline-block;font-size:7pt;background:#fff">Avanzar 10 cm</div>
+<div style="margin-top:4px">Rectángulo. Una acción que el robot ejecuta.</div>
+</div>
+<div style="padding:4px 5px">
+<div style="width:62px;height:38px;margin:0 auto;position:relative">
+<div style="position:absolute;left:50%;top:50%;width:27px;height:27px;margin:-13.5px 0 0 -13.5px;border:1px solid #111;background:#fff;transform:rotate(45deg)"></div>
+<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6.4pt">¿sí/no?</div>
+</div>
+<div style="margin-top:2px">Rombo. Una pregunta con <b>dos</b> salidas: Sí y No.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:5px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec;align-items:stretch">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">7</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">LEER UN DIAGRAMA DE FLUJO</div>
+</div>
+<div style="display:grid;grid-template-columns:0.85fr 1fr 1.05fr">
+
+<div style="padding:5px 4px;border-right:1px solid #111;display:grid;grid-template-columns:10px 1fr 10px;align-items:center;justify-items:center;font-size:6.4pt">
+<div style="grid-column:2;grid-row:1;border:1px solid #111;border-radius:999px;padding:1px 12px">INICIO</div>
+<div style="grid-column:2;grid-row:2;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:8px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:3;border:1px solid #111;transform:skewX(-16deg);padding:1px 8px"><span style="display:inline-block;transform:skewX(16deg)">Leer la edad</span></div>
+<div style="grid-column:2;grid-row:4;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:8px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:5;width:100%;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px;box-sizing:border-box"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:7px 12px;text-align:center;line-height:1.1">¿edad &ge; 18?</div></div>
+<div style="grid-column:2;grid-row:6;position:relative;width:100%;height:15px">
+<div style="position:absolute;left:25%;right:25%;top:0;border-top:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:0;height:15px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:75%;top:0;height:15px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:11px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:75%;top:11px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:27%;top:0;font-weight:700">SÍ</div>
+<div style="position:absolute;left:77%;top:0;font-weight:700">NO</div></div>
+<div style="grid-column:2;grid-row:7;display:flex;width:100%">
+<div style="flex:1;display:flex;justify-content:center"><div style="border:1px solid #111;transform:skewX(-16deg);padding:1px 4px;white-space:nowrap;font-size:5.9pt"><span style="display:inline-block;transform:skewX(16deg)">Puede votar</span></div></div>
+<div style="flex:1;display:flex;justify-content:center"><div style="border:1px solid #111;transform:skewX(-16deg);padding:1px 4px;white-space:nowrap;font-size:5.9pt"><span style="display:inline-block;transform:skewX(16deg)">No puede votar</span></div></div>
+</div>
+<div style="grid-column:2;grid-row:8;position:relative;width:100%;height:13px">
+<div style="position:absolute;left:25%;right:25%;bottom:0;border-bottom:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:0;height:13px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:75%;top:0;height:13px;border-left:1px solid #111"></div></div>
+<div style="grid-column:2;grid-row:9;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:6px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:10;border:1px solid #111;border-radius:999px;padding:1px 12px">FIN</div>
+</div>
+
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">7.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div style="margin-top:2px">a) ¿Cuántos símbolos de decisión tiene? ______</div>
+<div style="margin-top:3px">b) ¿Qué forma tiene el símbolo donde se pregunta? ____________</div>
+<div style="margin-top:3px">c) ¿Cuántos caminos distintos se pueden recorrer desde INICIO hasta FIN? ______</div>
+<div style="margin-top:3px">d) Si la edad es <b>25</b>, ¿qué se muestra? ____________________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) 1 &middot; (b) rombo &middot; (c) 2 &middot; (d) &ldquo;Puede votar&rdquo;.</div>
+</div>
+
+<div style="padding:5px 7px">
+<div style="font-weight:700">7.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:2px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Edad</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Camino (SÍ/NO)</td><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Qué se muestra</td></tr>
+<tr><td style="border:1px solid #111;padding:6px 4px">12</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:6px 4px">18</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:6px 4px">40</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px">Si cambiamos la pregunta a <b>¿edad &gt; 18?</b>, <b>una sola fila</b> de la tabla cambia. ¿Cuál y por qué?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 12 &rarr; NO / no puede &middot; 18 &rarr; SÍ / puede &middot; 40 &rarr; SÍ / puede. Con &ldquo;&gt; 18&rdquo; cambia la fila del <b>18</b>: pasa a NO, porque &ge; incluye al 18 y &gt; no.</div>
+</div>
+</div>
+</div>
+
+<div style="border:2px solid #111;break-inside:avoid;margin-bottom:5px">
+<div style="display:flex;justify-content:space-between;background:#111;color:#fff;padding:3px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap"><span style="white-space:nowrap">8 &middot; RETO FINAL &mdash; ARMA TU DIAGRAMA DE FLUJO</span><span>{{ t4 }} &middot; 3 pts</span></div>
+<div style="padding:5px 8px">
+<div><b>La maceta inteligente.</b> Un robot cuida una planta: mide la humedad de la tierra; si la humedad es <b>menor a 30</b>, riega 5 segundos; si no, no hace nada. Después vuelve a medir, una y otra vez.</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:10px;margin-top:5px">
+
+<div>
+<div style="font-size:7.4pt;font-style:italic;margin-bottom:3px">a) Empareja cada texto del banco con su figura: escribe el número de la figura en la raya. Cada texto se usa <b>una sola vez</b>.</div>
+<div style="display:grid;grid-template-columns:14px 1fr 14px;align-items:center;justify-items:center;font-size:6.6pt">
+<div style="grid-column:1;grid-row:3 / 10;justify-self:stretch;align-self:stretch;position:relative;margin:9px 0 0 1px;border-left:1px solid #111;border-top:1px solid #111;border-bottom:1px solid #111">
+<div style="position:absolute;right:-1px;top:-3.5px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-left:4px solid #111"></div>
+</div>
+<div style="grid-column:2;grid-row:1;border:1px solid #111;border-radius:999px;padding:1px 12px">INICIO</div>
+<div style="grid-column:2;grid-row:2;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:8px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:3;border:1px solid #111;transform:skewX(-16deg);padding:5px 30px"><span style="display:inline-block;transform:skewX(16deg)"><span style="color:#bbb">(1)</span></span></div>
+<div style="grid-column:2;grid-row:4;display:flex;flex-direction:column;align-items:center"><div style="width:1px;height:8px;background:#111"></div><div style="width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div></div>
+<div style="grid-column:2;grid-row:5;width:100%;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#111;padding:1px;box-sizing:border-box"><div style="clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:#fff;padding:13px 12px;text-align:center;line-height:1.1"><span style="color:#bbb">(2)</span></div></div>
+<div style="grid-column:2;grid-row:6;position:relative;width:100%;height:15px">
+<div style="position:absolute;left:25%;right:25%;top:0;border-top:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:0;height:15px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:75%;top:0;height:15px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:11px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:75%;top:11px;margin-left:-3px;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid #111"></div>
+<div style="position:absolute;left:27%;top:0;font-weight:700">SÍ</div>
+<div style="position:absolute;left:77%;top:0;font-weight:700">NO</div></div>
+<div style="grid-column:2;grid-row:7;display:flex;width:100%">
+<div style="flex:1;display:flex;justify-content:center"><div style="border:1px solid #111;padding:6px 18px;color:#bbb">(3)</div></div>
+<div style="flex:1;display:flex;justify-content:center"><div style="border:1px solid #111;padding:6px 18px;color:#bbb">(4)</div></div>
+</div>
+<div style="grid-column:2;grid-row:8;position:relative;width:100%;height:13px">
+<div style="position:absolute;left:25%;right:25%;bottom:0;border-bottom:1px solid #111"></div>
+<div style="position:absolute;left:25%;top:0;height:13px;border-left:1px solid #111"></div>
+<div style="position:absolute;left:75%;top:0;height:13px;border-left:1px solid #111"></div></div>
+<div style="grid-column:2;grid-row:9;width:1px;height:10px;background:#111"></div>
+</div>
+<div style="border:1px solid #111;background:#f5f5f5;padding:4px 6px;font-size:7.2pt;margin-top:5px">
+<b>Banco de textos</b> &mdash; escribe el número de la figura en cada raya:<br />___ Regar 5 segundos &nbsp; ___ ¿humedad &lt; 30? &nbsp; ___ No regar &nbsp; ___ Leer la humedad de la tierra
+</div>
+</div>
+
+<div>
+<div style="font-size:7.4pt">b) ¿Por qué el símbolo (2) tiene que ser un <b>rombo</b> y no un rectángulo?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="font-size:7.4pt;margin-top:6px">c) Mira la <b>flecha de regreso</b> del diagrama. ¿Qué haría el robot si no existiera?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="font-size:7.4pt;margin-top:6px">d) La planta se regó y la humedad subió a 45. ¿Qué camino toma el diagrama en la siguiente vuelta?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+</div>
+</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:4px">Clave: (1) Leer la humedad de la tierra &middot; (2) ¿humedad &lt; 30? &middot; (3) Regar 5 segundos &middot; (4) No regar &middot; La flecha de regreso lleva otra vez a la figura (1). (b) porque es una pregunta con dos salidas distintas. (c) sin la flecha mediría una sola vez y se detendría para siempre. (d) con 45 la respuesta es NO &rarr; no riega y vuelve a medir.</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:8px">
+<div style="border:1px solid #111;padding:5px 7px">
+<div style="font-weight:700;font-size:8.2pt">RÚBRICA (10 pts)</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:2px 5px;font-weight:700">Criterio</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Pts</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Log.</td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 1 &mdash; ordenar y describir pasos (temas 1&ndash;3)</td><td style="border:1px solid #111;text-align:center">2,5</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 2 &mdash; repetir, decidir y corregir (temas 4&ndash;6)</td><td style="border:1px solid #111;text-align:center">2,5</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 3 &mdash; leer un diagrama de flujo (tema 7)</td><td style="border:1px solid #111;text-align:center">2</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Reto final &mdash; armar el diagrama (tema 8)</td><td style="border:1px solid #111;text-align:center">3</td><td style="border:1px solid #111"></td></tr>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 5px;font-weight:700">TOTAL</td><td style="border:1px solid #111;text-align:center;font-weight:700">10</td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7pt;font-style:italic;margin-top:2px">Respuesta correcta sin explicación: mitad de puntos. Respuesta equivocada con razonamiento claro: conserva puntos.</div>
+</div>
+<div style="border:1px solid #111;padding:5px 7px">
+<div style="font-weight:700;font-size:8.2pt">AL TERMINAR &mdash; marca con una X</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Puedo&hellip;</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">aún no</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">con ayuda</td><td style="border:1px solid #111;padding:2px;text-align:center;width:26px">solo</td></tr>
+<tr><td style="border:1px solid #111;padding:4px">ordenar los pasos de un algoritmo</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">usar repetir y decidir</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">leer un diagrama de flujo</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">armar un diagrama de flujo</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7.6pt;margin-top:3px">Lo que menos entendí: ____________________</div>
+</div>
+</div>
+
+</div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;claves&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;},&quot;mostrarTiempos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    let g = null;
+    try { g = localStorage.getItem('claves8vo'); } catch (e) {}
+    this.aplicar(g === null ? !!this.props.claves : g === '1');
+  }
+  componentDidUpdate(prev) { if (prev.claves !== this.props.claves) this.aplicar(!!this.props.claves); }
+  aplicar(on) {
+    try { localStorage.setItem('claves8vo', on ? '1' : '0'); } catch (e) {}
+    document.querySelectorAll('[data-clave]').forEach(el => { el.style.display = on ? 'block' : 'none'; });
+    document.querySelectorAll('#zoomwrap').forEach(w => { w.style.zoom = on ? 0.84 : 1; });
+    const b = document.getElementById('btnClaves');
+    if (b) { b.textContent = on ? 'Ocultar claves' : 'Ver claves'; b.style.background = on ? '#146c43' : '#333'; }
+    const e = document.getElementById('etiquetaVersion');
+    if (e) { e.textContent = on ? 'DOCENTE' : 'ESTUDIANTE'; e.style.color = on ? '#146c43' : '#333'; }
+  }
+  renderVals() {
+    return {
+      toggleClaves: () => {
+        const el = document.querySelector('[data-clave]');
+        this.aplicar(!(el && el.style.display !== 'none'));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

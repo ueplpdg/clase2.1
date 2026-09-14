@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, Georgia, serif; }
+  a { color: #1b4b8f; } a:hover { color: #0f2d57; }
+  pre { font-family: 'JetBrains Mono', ui-monospace, monospace; margin:0; }
+  @media print { .barra-docente { display: none !important; } }
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<div class="barra-docente" style="position:fixed;top:8px;right:8px;z-index:9000;background:rgba(255,255,255,.97);border:1px solid #111;box-shadow:0 2px 8px rgba(0,0,0,.18);padding:6px 8px;display:flex;align-items:center;gap:7px;font-family:system-ui,sans-serif;font-size:11px">
+<button id="btnClaves" onClick="{{ toggleClaves }}" style="background:#333;border:none;color:#fff;font-family:system-ui,sans-serif;font-size:11px;font-weight:700;padding:6px 10px;cursor:pointer;white-space:nowrap">Ver claves</button>
+<div id="etiquetaVersion" style="font-weight:700;color:#333;white-space:nowrap">ESTUDIANTE</div>
+</div>
+
+<doc-page size="letter">
+
+<section class="page" data-screen-label="3BGU C1" style="padding:0.32in 0.45in 0.26in;box-sizing:border-box;font-size:8.3pt;line-height:1.15">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #111;padding-bottom:3px">
+<div style="font-size:7.6pt;letter-spacing:.06em;font-weight:700;white-space:nowrap">UNIDAD EDUCATIVA PARTICULAR &ldquo;LA PROVIDENCIA&rdquo;</div>
+<div style="font-size:7.6pt;letter-spacing:.06em;white-space:nowrap">Robótica &middot; Razonamiento &middot; 2026&ndash;2027</div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:4px">
+<div style="font-size:12pt;font-weight:700;white-space:nowrap">Razonamiento: ocho rutas de pensamiento</div>
+<div style="font-size:8pt;font-weight:700;white-space:nowrap">TERCERO BGU &middot; TALLER DE NIVELACIÓN</div>
+</div>
+
+<div data-clave="1" style="display:none;text-align:center;font-size:7.8pt;font-weight:700;color:#146c43;border:1.5px solid #146c43;padding:2px;margin-top:4px;letter-spacing:.08em">VERSIÓN DOCENTE &mdash; CLAVES VISIBLES</div>
+
+<table style="width:100%;border-collapse:collapse;font-size:7.6pt;margin-top:5px">
+<tbody>
+<tr>
+<td colspan="2" style="border:1px solid #111;padding:6px">NOMBRE:</td>
+<td style="border:1px solid #111;padding:6px">Paralelo: ______</td>
+<td style="border:1px solid #111;padding:6px">Fecha: __________</td>
+<td style="border:1px solid #111;padding:6px">Nota: ______ /10</td>
+</tr>
+</tbody>
+</table>
+
+<div style="border:1px solid #111;border-top:none;padding:4px 7px;font-size:7.4pt;background:#f5f5f5">
+<b>Cómo trabajar esta hoja.</b> 80 minutos, tres bloques y un reto final. Cada tema tiene dos ejercicios: el <b>.1</b> es directo y el <b>.2</b> exige un paso más. <b>El procedimiento vale igual que la respuesta</b>, así que deja escritos tus intentos y tus descartes. Individual, sin calculadora.
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 1 &middot; NÚMEROS, PATRONES Y PROPORCIÓN</span><span>{{ t1 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">1</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">SERIES NUMÉRICAS</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.05fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">1.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div style="font-size:10pt;font-weight:700;margin:3px 0;letter-spacing:.12em">3 &nbsp; 6 &nbsp; 11 &nbsp; 18 &nbsp; 27 &nbsp; ____</div>
+<div>Escribe primero las diferencias entre términos consecutivos:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="margin-top:3px">Regla: ____________________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>38</b>. Diferencias 3, 5, 7, 9 &rarr; la siguiente es 11.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">1.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div style="font-size:10pt;font-weight:700;margin:3px 0;letter-spacing:.12em">2 &nbsp; 5 &nbsp; 4 &nbsp; 10 &nbsp; 8 &nbsp; 20 &nbsp; 16 &nbsp; ____</div>
+<div>Las diferencias no llevan a ninguna parte. Antes de responder, mira los términos <b>salteados</b>.</div>
+<div style="margin-top:3px">Respuesta: ______ &nbsp; ¿Qué descubriste al mirarlos así?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>40</b>. Son dos series entrelazadas, ambas por 2: posiciones impares 2, 4, 8, 16 y posiciones pares 5, 10, 20, 40.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">2</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">PORCENTAJES Y DESCUENTOS</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.2fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">2.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Un artículo cuesta <b>$80</b> y está con <b>25 % de descuento</b>.</div>
+<div style="margin-top:3px">a) Valor del descuento: __________</div>
+<div style="margin-top:3px">b) Precio que se paga: __________</div>
+<div style="margin-top:3px">Deja escrito el cálculo:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: $20 de descuento; se paga <b>$60</b>.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">2.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Un almacén anuncia: <i>&ldquo;20 % de descuento y, sobre ese precio, 10 % adicional&rdquo;</i>. El artículo cuesta <b>$200</b>.</div>
+<div style="margin-top:3px">a) Precio después del primer descuento: __________</div>
+<div style="margin-top:3px">b) Precio final: __________</div>
+<div style="margin-top:3px">c) El descuento total <b>no</b> es del 30 %. Calcula el porcentaje real y explica de dónde sale la diferencia:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 200 &rarr; 160 &rarr; <b>$144</b>. El segundo 10 % se calcula sobre 160, no sobre 200. Descuento real: 56/200 = <b>28 %</b>.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">3</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">PROMEDIOS Y VELOCIDAD MEDIA</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.2fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">3.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Un estudiante tiene las notas <b>7, 8, 9 y 8</b>.</div>
+<div style="margin-top:3px">a) Promedio actual: __________</div>
+<div style="margin-top:3px">b) Quiere que el promedio de <b>cinco</b> notas sea <b>8,2</b>. ¿Qué nota necesita?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: promedio <b>8</b>. Para 8,2 con 5 notas la suma debe ser 41; ya tiene 32 &rarr; necesita <b>9</b>.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">3.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Un ciclista sube una cuesta a <b>30 km/h</b> y baja <b>la misma cuesta</b> a <b>60 km/h</b>. Supón que la cuesta mide 60 km.</div>
+<div style="margin-top:3px">a) Tiempo de subida: ______ &nbsp; de bajada: ______</div>
+<div style="margin-top:3px">b) Velocidad media de todo el recorrido: __________</div>
+<div style="margin-top:3px">c) La respuesta no es 45 km/h. ¿Qué está mal en promediar 30 y 60?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: 2 h subiendo y 1 h bajando &rarr; 120 km ÷ 3 h = <b>40 km/h</b>. Promediar 30 y 60 supondría igual tiempo a cada velocidad, pero se pasa el doble de tiempo a la velocidad baja.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 2 &middot; LÓGICA Y DEDUCCIÓN</span><span>{{ t2 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">4</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">DEDUCIR A PARTIR DE PREMISAS</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.25fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">4.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div style="font-style:italic;margin-top:2px">Todos los ingenieros saben programar. Andrea es ingeniera.</div>
+<div style="margin-top:3px">¿Se concluye que Andrea sabe programar? &nbsp; SÍ / NO</div>
+<div style="margin-top:3px">Justifica:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: SÍ. Andrea pertenece al grupo del que se afirma la propiedad para todos sus miembros.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">4.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div style="font-style:italic">Si llueve, la cancha se moja.</div>
+<div style="margin-top:3px">Caso A: la cancha <b>está mojada</b> &rarr; ¿se concluye que llovió? ________</div>
+<div style="margin-top:3px">Caso B: la cancha <b>no está mojada</b> &rarr; ¿se concluye que no llovió? ________</div>
+<div style="margin-top:3px">Uno de los dos razonamientos es válido y el otro no. Explica cuál falla y por qué:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: A <b>no</b> se concluye (pudo mojarse con una manguera); B <b>sí</b> es válido: si no se mojó, no llovió. La premisa dice qué pasa cuando llueve, no que la lluvia sea la única causa.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">5</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">ORDENAR CON TABLA DE DESCARTE</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.3fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">5.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Cuatro personas hacen fila:</div>
+<div style="margin-left:6px;font-size:8pt;line-height:1.4">&middot; Ana está antes que Beto.<br />&middot; Carla está inmediatamente después de Beto.<br />&middot; Diego es el último.<br />&middot; Carla está antes que Ana.</div>
+<div style="margin-top:3px">Orden: 1 ______ 2 ______ 3 ______ 4 ______</div>
+<div style="margin-top:3px;font-size:7.8pt">Si el orden <b>no</b> es posible, escribe qué pistas se contradicen: ____________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>no tiene solución</b>. Las tres primeras dan Ana&ndash;Beto&ndash;Carla&ndash;Diego, pero la cuarta exige Carla antes que Ana. Se puntúa a quien detecta y nombra la contradicción.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">5.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Luis, Marta y Sofía estudian <b>Medicina, Derecho e Ingeniería</b> y viven en <b>Cuenca, Loja y Quito</b>.</div>
+<div style="margin-left:6px;font-size:7.8pt;line-height:1.4">1. Sofía vive en Quito. &nbsp; 2. Quien estudia Derecho vive en Cuenca.<br />3. Marta no estudia Ingeniería ni vive en Cuenca. &nbsp; 4. Luis no estudia Medicina.</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 4px"></td><td style="border:1px solid #111;padding:2px 4px">Medicina</td><td style="border:1px solid #111;padding:2px 4px">Derecho</td><td style="border:1px solid #111;padding:2px 4px">Ingeniería</td><td style="border:1px solid #111;padding:2px 4px">Ciudad</td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">Luis</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">Marta</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:5px 4px">Sofía</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="margin-top:3px;font-size:7.8pt">¿Con qué pista conviene empezar y por qué esa? ____________________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: Luis&ndash;Derecho&ndash;Cuenca &middot; Marta&ndash;Medicina&ndash;Loja &middot; Sofía&ndash;Ingeniería&ndash;Quito. Se empieza por la pista 1: es la única afirmación directa, sin negaciones.</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="page" data-screen-label="3BGU C2" style="padding:0.32in 0.45in 0.26in;box-sizing:border-box;font-size:8.3pt;line-height:1.15">
+<div id="zoomwrap" style="zoom:1">
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">6</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">OPERADORES DEFINIDOS</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.1fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">6.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Se define la operación <b>a &#9733; b = 2a + b</b>.</div>
+<div style="margin-top:3px">a) 3 &#9733; 4 = ________ &nbsp; b) 5 &#9733; 0 = ________</div>
+<div style="margin-top:3px">c) ¿Da lo mismo 3 &#9733; 4 que 4 &#9733; 3? Compruébalo:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) 10 &middot; (b) 10 &middot; (c) no: 4&#9733;3 = 11. La operación no es conmutativa.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">6.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>Ahora <b>a &#9733; b = a &middot; b &minus; (a + b)</b>.</div>
+<div style="margin-top:3px">a) 4 &#9733; 6 = ________</div>
+<div style="margin-top:3px">b) Halla <b>x</b> si <b>5 &#9733; x = 19</b>. Plantea la ecuación y despeja (no por tanteo):</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: (a) 24 &minus; 10 = <b>14</b>. (b) 5x &minus; 5 &minus; x = 19 &rarr; 4x = 24 &rarr; x = <b>6</b>.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #111;padding:2px 6px;font-size:7.4pt;font-weight:700;letter-spacing:.07em;margin:5px 0 4px;white-space:nowrap">
+<span>BLOQUE 3 &middot; VERBAL Y ABSTRACTO</span><span>{{ t3 }}</span>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">7</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">ANALOGÍAS Y TÉRMINO EXCLUIDO</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">7.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div><b>HAMBRE</b> es a <b>COMER</b> como <b>FATIGA</b> es a:</div>
+<div style="margin-left:6px;margin-top:2px">a) trabajar &nbsp; b) cansancio &nbsp; c) descansar &nbsp; d) sueño</div>
+<div style="margin-top:3px">Escribe primero la relación en palabras y después elige:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="margin-top:3px">La opción (b) atrae a mucha gente. ¿Qué tiene de distinto?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>c</b>. Relación = necesidad : acción que la elimina. (b) es un sinónimo de fatiga, no una acción: cambia el tipo de relación.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">7.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div style="line-height:1.4">¿Cuál no pertenece al grupo?</div>
+<div style="font-weight:700;line-height:1.4">reloj &middot; calendario &middot; termómetro &middot; cronómetro</div>
+<div style="margin-top:4px">a) Excluido: __________ &nbsp; Criterio: ____________________</div>
+<div style="margin-top:3px">b) Este ítem admite <b>dos respuestas defendibles</b>. Escribe la otra y su criterio, y explica por qué el tuyo agrupa mejor:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>termómetro</b>: los otros tres miden tiempo. &ldquo;Calendario&rdquo; es defendible con un criterio secundario (no es aparato mecánico), pero agrupa a menos elementos: el criterio que explica a más elementos es el más fuerte.</div>
+</div>
+</div>
+</div>
+
+<div style="border:1px solid #111;break-inside:avoid;margin-bottom:4px">
+<div style="display:flex;border-bottom:1px solid #111;background:#ececec">
+<div style="background:#111;color:#fff;font-weight:700;padding:2px 7px;font-size:8pt">8</div>
+<div style="padding:2px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em;white-space:nowrap">RAZONAMIENTO ABSTRACTO &mdash; MATRICES</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr">
+<div style="padding:5px 7px;border-right:1px solid #111">
+<div style="font-weight:700">8.1 <span style="font-weight:400;font-size:7pt;color:#555">nivel 1</span></div>
+<div>Completa la casilla vacía:</div>
+<pre style="font-size:11pt;line-height:1.25;margin-top:3px">○  ●  ◐
+●  ◐  ○
+◐  ○  ?</pre>
+<div style="margin-top:3px">Respuesta: ______</div>
+<div style="margin-top:3px">¿Te bastó mirar la fila, la columna, o hacían falta las dos? ____________</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>●</b>. Cada símbolo aparece una sola vez por fila y por columna; aquí basta con la fila o con la columna, pero conviene verificar en las dos.</div>
+</div>
+<div style="padding:5px 7px">
+<div style="font-weight:700">8.2 <span style="font-weight:400;font-size:7pt;color:#555">nivel 2</span></div>
+<div>En cada fila, la tercera casilla se obtiene combinando las dos primeras:</div>
+<pre style="font-size:10pt;line-height:1.3;margin-top:3px">▲●    ●■    →   ▲■
+●■    ■▲    →   ●▲
+▲■    ■●    →    ?</pre>
+<div style="margin-top:3px">Respuesta: ______ &nbsp; Escribe la operación en palabras:</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:3px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:3px">Clave: <b>▲●</b>. Se elimina el símbolo que las dos casillas comparten y se conservan los que aparecen una sola vez.</div>
+</div>
+</div>
+</div>
+
+<div style="border:2px solid #111;break-inside:avoid;margin-bottom:5px">
+<div style="display:flex;justify-content:space-between;background:#111;color:#fff;padding:3px 8px;font-weight:700;font-size:8pt;letter-spacing:.04em"><span style="white-space:nowrap">9 &middot; RETO FINAL &mdash; SIN PISTAS DE MÉTODO</span><span style="white-space:nowrap">{{ t4 }} &middot; 3 pts</span></div>
+<div style="padding:5px 8px">
+<div>Cinco estudiantes &mdash; <b>Ana, Bruno, Caro, Diego y Elsa</b> &mdash; rindieron el examen de ingreso:</div>
+<div style="margin-left:8px;font-size:8pt;margin-top:2px;line-height:1.4">1. Caro obtuvo más puntaje que Bruno, pero menos que Ana. &nbsp; 2. Elsa no fue la primera ni la última.<br />3. Diego obtuvo menos que Bruno. &nbsp; 4. Elsa obtuvo más puntaje que Caro.</div>
+<div style="display:grid;grid-template-columns:1.05fr 1fr;gap:10px;margin-top:5px">
+<div>
+<div style="font-weight:700;font-size:8.2pt">a) Ordena de mayor a menor puntaje:</div>
+<div style="margin-top:4px;font-size:8.2pt">1° ________ &nbsp; 2° ________ &nbsp; 3° ________ &nbsp; 4° ________ &nbsp; 5° ________</div>
+<div style="font-weight:700;font-size:8.2pt;margin-top:6px">b) ¿Qué pista cerró el orden? ¿Por qué las otras tres no bastaban?</div>
+<div style="border-bottom:1px dotted #666;height:12px;margin-top:4px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+<div style="border-bottom:1px dotted #666;height:12px"></div>
+</div>
+<div>
+<div style="font-weight:700;font-size:8.2pt">c) Espacio de trabajo: escribe aquí tu cadena de desigualdades y tus descartes.</div>
+<div style="border:1px solid #111;height:1.85in;margin-top:4px;background-image:repeating-linear-gradient(0deg,#f4f4f4 0 1px,transparent 1px 14px)"></div>
+</div>
+</div>
+<div data-clave="1" style="display:none;color:#146c43;font-weight:700;font-size:7.2pt;margin-top:4px">Clave: <b>Ana &middot; Elsa &middot; Caro &middot; Bruno &middot; Diego</b>. De 1 y 3 sale Ana &gt; Caro &gt; Bruno &gt; Diego. La 4 coloca a Elsa sobre Caro y la 2 le prohíbe el primer puesto: solo le queda el 2°. La pista que cierra el orden es la <b>2</b>; sin ella Elsa podría ser primera y habría dos soluciones.</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:8px">
+<div style="border:1px solid #111;padding:5px 7px">
+<div style="font-weight:700;font-size:8.2pt">RÚBRICA (10 pts)</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:2px 5px;font-weight:700">Criterio</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Pts</td><td style="border:1px solid #111;padding:2px 5px;font-weight:700;width:34px;text-align:center">Log.</td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 1 &mdash; números, patrones y proporción</td><td style="border:1px solid #111;text-align:center">2,5</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 2 &mdash; lógica y deducción</td><td style="border:1px solid #111;text-align:center">2,5</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Bloque 3 &mdash; verbal y abstracto</td><td style="border:1px solid #111;text-align:center">2</td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:2px 5px">Reto final (tema 9)</td><td style="border:1px solid #111;text-align:center">3</td><td style="border:1px solid #111"></td></tr>
+<tr style="background:#f2f2f2"><td style="border:1px solid #111;padding:2px 5px;font-weight:700">TOTAL</td><td style="border:1px solid #111;text-align:center;font-weight:700">10</td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7pt;font-style:italic;margin-top:2px">Respuesta correcta sin procedimiento: mitad de puntos. Respuesta equivocada con razonamiento claro: conserva puntos.</div>
+</div>
+<div style="border:1px solid #111;padding:5px 7px">
+<div style="font-weight:700;font-size:8.2pt">AL TERMINAR &mdash; marca con una X</div>
+<table style="width:100%;border-collapse:collapse;font-size:7.4pt;margin-top:3px">
+<tbody>
+<tr style="background:#eee"><td style="border:1px solid #111;padding:2px 4px;font-weight:700">Tipo de razonamiento</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">me costó</td><td style="border:1px solid #111;padding:2px;text-align:center;width:30px">regular</td><td style="border:1px solid #111;padding:2px;text-align:center;width:26px">fluido</td></tr>
+<tr><td style="border:1px solid #111;padding:4px">Numérico (temas 1, 2, 3)</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">Lógico (temas 4, 5, 6, 9)</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">Verbal (tema 7)</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+<tr><td style="border:1px solid #111;padding:4px">Abstracto (tema 8)</td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td><td style="border:1px solid #111"></td></tr>
+</tbody>
+</table>
+<div style="font-size:7.6pt;margin-top:3px">El que más me costó: ____________________</div>
+</div>
+</div>
+
+</div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;claves&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;},&quot;mostrarTiempos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Versión&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    let g = null;
+    try { g = localStorage.getItem('claves3bgu'); } catch (e) {}
+    this.aplicar(g === null ? !!this.props.claves : g === '1');
+  }
+  componentDidUpdate(prev) { if (prev.claves !== this.props.claves) this.aplicar(!!this.props.claves); }
+  aplicar(on) {
+    try { localStorage.setItem('claves3bgu', on ? '1' : '0'); } catch (e) {}
+    document.querySelectorAll('[data-clave]').forEach(el => { el.style.display = on ? 'block' : 'none'; });
+    document.querySelectorAll('#zoomwrap').forEach(w => { w.style.zoom = on ? 0.87 : 1; });
+    const b = document.getElementById('btnClaves');
+    if (b) { b.textContent = on ? 'Ocultar claves' : 'Ver claves'; b.style.background = on ? '#146c43' : '#333'; }
+    const e = document.getElementById('etiquetaVersion');
+    if (e) { e.textContent = on ? 'DOCENTE' : 'ESTUDIANTE'; e.style.color = on ? '#146c43' : '#333'; }
+  }
+  renderVals() {
+    return {
+      toggleClaves: () => {
+        const el = document.querySelector('[data-clave]');
+        this.aplicar(!(el && el.style.display !== 'none'));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
